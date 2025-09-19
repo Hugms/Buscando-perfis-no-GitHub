@@ -8,4 +8,6 @@ esse projeto foi bem desafiador pois foi o primeiro contato real com uma api, po
 
 [<img src="./src/img/Tela.gif">]
 
-mas ainda a pontos a melhorar! o proximo passo e adicionar mais informações como seguidores, linguagem e etc... ! 😉
+Agora foi adicionado novas informações no projeto como linguem utilizada no projeto 
+
+<img src="./src/img/Tela.gif">

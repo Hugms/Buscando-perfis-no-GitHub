@@ -35,8 +35,8 @@ main {
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%;
+  max-width: 960px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
   background-color: #fff;
   display: flex;
@@ -80,7 +80,7 @@ main {
 }
 
 .container header #btn-search:hover {
-  background-color: #2C3E50;
+  background-color: darkslategray;
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -92,21 +92,26 @@ main {
   padding: 40px;  
 }
 
-.container .profile-data .info {
-  display: flex;  
-  flex-wrap: wrap;
-  align-items: center;
+.container .profile-data .info .data{
+  width: 50%;
+  text-align: center;
 }
 
-.container .profile-data .info .data{
-  padding: 40px;
-  width: 50%;
+.info {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.data {
+  display: flex;
 }
 
 .container .profile-data .info img{
   width: 50%;
   border-radius: 50%;
-  border: 10px solid  #1A1A1A;
+  border: 10px solid darkslategray;
+  margin-bottom: 25px;
 }
 
 .container .profile-data .info h1{
@@ -121,7 +126,20 @@ main {
   line-height: 23px;
 }
 
-/* REPOSITORIES */
+.container .profile-data .events h2{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.container .profile-data .events li{
+  margin: 30px;
+}
+
+.container .profile-data .events li a{
+  font-weight: bold;
+}
 
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
@@ -144,12 +162,25 @@ main {
 }
 
 .container .profile-data .repositories ul li a:hover{
-  background-color:#2C3E50;
+  background-color:darkslategray;
   color: #fff
 }
 
 .container .profile-data.hide{
   display: none;
+}
+
+.languages {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.estilo {
+  background-color: #000;
+  color: #fff;
+  padding: 5px 5px;
+  border-radius: 7px;
 }
 
 @media (max-width: 1280px) {
@@ -175,6 +206,17 @@ main {
   {
     width: 100%;
   }
+
+  .info {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .container .profile-data .info .data{
+    width: 80%;
+    text-align: center;
+    margin-left: 30px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -191,5 +233,11 @@ main {
   {
     width: 100%;
     padding: 0;
+  }
+
+  .container .profile-data .info .data{
+    width: 80%;
+    text-align: center;
+    margin-left: 30px;
   }
 }
